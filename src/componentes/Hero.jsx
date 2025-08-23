@@ -27,7 +27,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-gradient-to-tr from-transparent via-red-800/30 to-orange-600/40"
         style={{
-          transform: `translateY(${scrollY * 0.5}px) rotate(${scrollY * 0.1}deg)`,
+          transform: `translateY(${scrollY * 0.5}px) rotate(${scrollY * 0.2}deg)`,
         }}
       />
 
@@ -71,7 +71,7 @@ export default function Hero() {
       >
         {/* Título con efectos mejorados */}
         <div className="mb-8 md:mb-12">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white m-6 md:mb-7">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white m-6 md:mb-7">
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-white via-red-100 via-white via-red-200 to-white bg-clip-text text-transparent animate-pulse bg-[length:200%_100%] animate-[shimmer_3s_ease-in-out_infinite]">
                 EL TENTADERO
