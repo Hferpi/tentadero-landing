@@ -14,7 +14,7 @@ export default function Hero() {
   const scrollY = useScrollAnimation();
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center py-10 text-center overflow-hidden">
       {/* Fondos con múltiples capas y efectos parallax */}
       <div
         className="absolute inset-0 bg-gradient-to-br from-red-950 via-red-900 to-black"
@@ -64,15 +64,15 @@ export default function Hero() {
 
       {/* Contenido principal */}
       <div
-        className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8"
         style={{
           transform: `translateY(${scrollY * 0.2}px)`,
         }}
       >
         {/* Título con efectos mejorados */}
-        <div className="mb-8 md:mb-12">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white m-6 md:mb-7">
-            <span className="relative inline-block">
+        <div className=" lg:mb-8 md:mb-20 sm:mb-7">
+          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-black text-white lg:m-6 md:m-5 sm:m-8">
+            <span className="relative inline-block mb-5">
               <span className="bg-gradient-to-r from-white via-red-100 via-white via-red-200 to-white bg-clip-text text-transparent animate-pulse bg-[length:200%_100%] animate-[shimmer_3s_ease-in-out_infinite]">
                 EL TENTADERO
               </span>
@@ -85,12 +85,12 @@ export default function Hero() {
         </div>
 
         {/* Descripción mejorada */}
-        <div className="mb-8 md:mb-12">
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl mx-auto mb-4 leading-relaxed font-light">
-            Gastronomia ibérica en el corazón de Peñíscola 🍷
+        <div className="lg:m-8 md:m-12 sm:m-4">
+          <p className="sm:text-xl md:text-2xl lg:text-2xl text-white/95 max-w-4xl mx-auto mb-4 leading-relaxed font-light">
+            Gastronomia ibérica en el corazón de Peñíscola🍷
           </p>
-          <p className="text-base sm:text-lg md:text-xl text-red-200/90 max-w-3xl mx-auto leading-relaxed">
-            Disfruta de tablas auténticas con carnes ibericas de primera calidad.
+          <p className="text-base sm:text-lg md:text-xl text-red-200/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Disfruta de tablas auténticas con embutidos ibericos de primera calidad.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function Hero() {
       </div>
 
       {/* Carousel mejorado con mejor responsive */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 md:mb-12">
+      <div className="relative z-10 w-full  max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 md:mb-12">
         <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-4 md:p-6 lg:p-8 border border-white/10">
           <Carousel 
             className="w-full"
@@ -123,7 +123,7 @@ export default function Hero() {
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                        className="w-full h-64 sm:h-48 md:h-56 lg:h-64 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                         loading="lazy"
                       />
                       
