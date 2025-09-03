@@ -175,7 +175,7 @@ export const vinos = [
         nombre: "Vino 20",
         nombreVino: "Izadi",
         año: 2020,
-        tipo: "Tito",
+        tipo: "Tinto",
         maduración: "Crianza",
         imagen: "/vinos/vino20.jpeg"
     },
