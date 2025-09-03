@@ -209,7 +209,7 @@ export default function GoogleReviews() {
         >
             <div className="max-w-7xl mx-auto">
                 {/* Header con estadísticas */}
-                <div className={`text-center mb-12 md:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                <div className={`text-center mb-12 md:mb-16 transition-all duration-2000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
                     <div className="inline-flex items-center gap-3 mb-4">
                         <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-600" viewBox="0 0 24 24" fill="currentColor">

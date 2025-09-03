@@ -9,15 +9,13 @@ function useIntersectionObserver() {
       
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-          }
+          setIsVisible(entry.isIntersecting);
         },
         { threshold: 0.1 }
       );
       
       observer.observe(element);
-      return () => observer.unobserve(element);
+      return () => observer.disconnect();
     }, [element]);
     
     return [setElement, isVisible];

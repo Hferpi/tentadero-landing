@@ -70,9 +70,9 @@ export default function Hero() {
         }}
       >
         {/* Título con efectos mejorados */}
-        <div className=" lg:mb-8 md:mb-20 sm:mb-7">
+        <div className=" lg:mb-8 md:mb-20 sm:mb-7 ">
           <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-black text-white lg:m-6 md:m-5 sm:m-8">
-            <span className="relative inline-block mb-5">
+            <span className=" inline-block mb-5">
               <span className="bg-gradient-to-r from-white via-red-100 via-white via-red-200 to-white bg-clip-text text-transparent animate-pulse bg-[length:200%_100%] animate-[shimmer_3s_ease-in-out_infinite]">
                 EL TENTADERO
               </span>
