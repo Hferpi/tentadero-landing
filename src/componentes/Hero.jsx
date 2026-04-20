@@ -80,17 +80,17 @@ export default function Hero() {
               <div className="absolute -inset-1 bg-gradient-to-r from-red-400/20 via-white/30 to-orange-400/20 blur-xl opacity-75 animate-pulse" />
             </span>
           </h1>
-          
+          <h2 className="sr-only">Restaurante en Peñíscola especialistas en jamón ibérico y vino</h2>
           
         </div>
 
         {/* Descripción mejorada */}
         <div className="lg:m-8 md:m-12 sm:m-4">
           <p className="sm:text-xl md:text-2xl lg:text-2xl text-white/95 max-w-4xl mx-auto mb-4 leading-relaxed font-light">
-            Gastronomia ibérica en el corazón de Peñíscola🍷
+            Tu <strong>restaurante en Peñíscola</strong> de gastronomía ibérica en el corazón de la ciudad 🍷
           </p>
           <p className="text-base sm:text-lg md:text-xl text-red-200/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Disfruta de tablas auténticas con embutidos ibericos de primera calidad.
+            Disfruta del mejor <strong>vino en Peñíscola</strong> maridado con <strong>jamón ibérico</strong> de primera calidad.
           </p>
         </div>
 
@@ -122,7 +122,7 @@ export default function Hero() {
                     <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900">
                       <img
                         src={product.image}
-                        alt={product.name}
+                        alt={`${product.name} - Selección de ibéricos y jamón en restaurante Peñíscola`}
                         className="w-full h-64 sm:h-48 md:h-56 lg:h-64 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                         loading="lazy"
                       />

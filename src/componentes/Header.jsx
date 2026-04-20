@@ -19,7 +19,7 @@ export default function Header() {
         {/* Logo */}
         <div onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="flex items-center md:gap-4 gap-2 cursor-pointer">
           <img
-            src="icono.jpeg"
+            src="icono.webp"
             alt="icono"
             className="w-10 h-10 md:w-14 md:h-14 rounded-xl"
           />

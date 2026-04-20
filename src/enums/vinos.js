@@ -6,7 +6,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino1.jpeg"
+        imagen: "/vinos/vino1.webp"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const vinos = [
         año: 2018,
         tipo: "Tinto",
         maduración: "Reserva",
-        imagen: "/vinos/vino2.jpeg"
+        imagen: "/vinos/vino2.webp"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const vinos = [
         año: 2020,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino3.jpeg"
+        imagen: "/vinos/vino3.webp"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino4.jpeg"
+        imagen: "/vinos/vino4.webp"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const vinos = [
         año: 2011,
         tipo: "Tinto",
         maduración: "Reserva",
-        imagen: "/vinos/vino5.jpeg"
+        imagen: "/vinos/vino5.webp"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Joven",
-        imagen: "/vinos/vino6.jpeg"
+        imagen: "/vinos/vino6.webp"
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino7.jpeg"
+        imagen: "/vinos/vino7.webp"
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ export const vinos = [
         año: 2020,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino8.jpeg"
+        imagen: "/vinos/vino8.webp"
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino9.jpeg"
+        imagen: "/vinos/vino9.webp"
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ export const vinos = [
         año: 2022,
         tipo: "Tinto",
         maduración: "Reserva",
-        imagen: "/vinos/vino10.jpeg"
+        imagen: "/vinos/vino10.webp"
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino11.jpeg"
+        imagen: "/vinos/vino11.webp"
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ export const vinos = [
         año: 2020,
         tipo: "Tinto",
         maduración: "Reserva",
-        imagen: "/vinos/vino12.jpeg"
+        imagen: "/vinos/vino12.webp"
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ export const vinos = [
         año: 2020,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino13.jpeg"
+        imagen: "/vinos/vino13.webp"
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino14.jpeg"
+        imagen: "/vinos/vino14.webp"
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino15.jpeg"
+        imagen: "/vinos/vino15.webp"
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Reserva",
-        imagen: "/vinos/vino16.jpeg"
+        imagen: "/vinos/vino16.webp"
     },
     {
         id: 17,
@@ -150,7 +150,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Joven",
-        imagen: "/vinos/vino17.jpeg"
+        imagen: "/vinos/vino17.webp"
     },
     {
         id: 18,
@@ -159,7 +159,7 @@ export const vinos = [
         año: null,
         tipo: "Tinto",
         maduración: "Reserva",
-        imagen: "/vinos/vino18.jpeg"
+        imagen: "/vinos/vino18.webp"
     },
     {
         id: 19,
@@ -168,7 +168,7 @@ export const vinos = [
         año: null,
         tipo: "Champagne",
         maduración: "Brut Imperial",
-        imagen: "/vinos/vino19.jpeg"
+        imagen: "/vinos/vino19.webp"
     },
     {
         id: 20,
@@ -177,7 +177,7 @@ export const vinos = [
         año: 2020,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino20.jpeg"
+        imagen: "/vinos/vino20.webp"
     },
     {
         id: 21,
@@ -186,7 +186,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino21.jpeg"
+        imagen: "/vinos/vino21.webp"
     },
     {
         id: 22,
@@ -195,7 +195,7 @@ export const vinos = [
         año: null,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino22.jpeg"
+        imagen: "/vinos/vino22.webp"
     },
     {
         id: 23,
@@ -204,7 +204,7 @@ export const vinos = [
         año: null,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino23.jpeg"
+        imagen: "/vinos/vino23.webp"
     },
     {
         id: 24,
@@ -213,7 +213,7 @@ export const vinos = [
         año: 2021,
         tipo: "Tinto",
         maduración: "Crianza",
-        imagen: "/vinos/vino24.jpeg"
+        imagen: "/vinos/vino24.webp"
     },
     
 ]

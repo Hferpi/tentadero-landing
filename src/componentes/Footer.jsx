@@ -8,7 +8,7 @@ export default function Footer() {
               EL TENTADERO
             </h3>
             <p className="text-gray-300">
-              Cocina tradicional ibérica en el corazón de Peñíscola
+              Especialistas en <strong>jamón ibérico</strong> y <strong>vino en Peñíscola</strong>. Tu restaurante de confianza cerca del Castillo de Papa Luna.
             </p>
           </div>
 

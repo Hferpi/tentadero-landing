@@ -19,6 +19,10 @@ export default function SeccionVinos() {
       ref={ref}
       className="py-16 px-4 sm:px-6 md:px-8 bg-gradient-to-br from-red-700 via-red-800 to-black text-white relative overflow-hidden"
     >
+      <div className="relative z-10 max-w-7xl mx-auto mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">La mejor selección de Vino en Peñíscola</h2>
+        <p className="text-lg text-red-100/80">Descubre nuestra bodega exclusiva de ibéricos y vinos seleccionados.</p>
+      </div>
       {/* Patrón de fondo */}
       <div className="absolute inset-0 opacity-10 z-0">
         <div
@@ -42,7 +46,7 @@ export default function SeccionVinos() {
             <div className="relative overflow-hidden">
                 <img 
                   src={vino.imagen} 
-                  alt={vino.nombre}
+                  alt={`${vino.nombreVino} - Vino en Peñíscola El Tentadero`}
                   className="w-full rounded-3xl h-full object-cover transition-transform duration-500 border-2 border-white"
                 />
                 
