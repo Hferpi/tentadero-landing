@@ -6,6 +6,23 @@ export default function Header() {
   const scrollY = useScrollAnimation();
   const isScrolled = scrollY > 50;
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80; // Ajuste para que el encabezado no tape el título
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+      setIsOpen(false);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500
@@ -38,6 +55,7 @@ export default function Header() {
         <nav className="hidden md:flex md:space-x-6 space-x-3">
           <a
             href="#reseñas"
+            onClick={(e) => handleScroll(e, "reseñas")}
             className={`font-medium transition-all duration-300 hover:scale-110 ${
               isScrolled
                 ? "text-gray-700 hover:text-red-600"
@@ -48,6 +66,7 @@ export default function Header() {
           </a>
           <a
             href="#menu"
+            onClick={(e) => handleScroll(e, "menu")}
             className={`font-medium transition-all duration-300 hover:scale-110 ${
               isScrolled
                 ? "text-gray-700 hover:text-red-600"
@@ -58,6 +77,7 @@ export default function Header() {
           </a>
           <a
             href="#vinos"
+            onClick={(e) => handleScroll(e, "vinos")}
             className={`font-medium transition-all duration-300 hover:scale-110 ${
               isScrolled
                 ? "text-gray-700 hover:text-red-600"
@@ -97,21 +117,21 @@ export default function Header() {
           <a
             href="#reseñas"
             className="font-medium hover:text-red-500"
-            onClick={() => setIsOpen(false)}
+            onClick={(e) => handleScroll(e, "reseñas")}
           >
             Reseñas
           </a>
           <a
             href="#menu"
             className="font-medium hover:text-red-500"
-            onClick={() => setIsOpen(false)}
+            onClick={(e) => handleScroll(e, "menu")}
           >
             Menú
           </a>
           <a
             href="#vinos"
             className="font-medium hover:text-red-500"
-            onClick={() => setIsOpen(false)}
+            onClick={(e) => handleScroll(e, "vinos")}
           >
             Vinos
           </a>
