@@ -24,14 +24,23 @@ function useIntersectionObserver() {
     return [setElement, isVisible];
 }
 
-// Datos de ejemplo de reseñas (reemplázalas con datos reales)
+// Datos de reseñas
 const reviewsData = {
     averageRating: 4.2,
-    totalReviews: 149,
+    totalReviews: 197,
     googleMapsUrl: "https://maps.app.goo.gl/fDnvuVJHk1MQ2j267",
     reviews: [
-        {
+         {
             id: 1,
+            author: "CarlaPiNk",
+            avatar: "https://lh3.googleusercontent.com/a/ACg8ocLVwGMZ46kN_adopWSTmvo7kDFACybab7XoQUxq1ngXmlkoCg=w72-h72-p-rp-mo-ba5-br100",
+            rating: 5,
+            date: "hace uno mese",
+            text: "Nuestra experiencia fue muy gratificante. Pedimos unas copas de tinto rioja, con una ración de patatas bravas, las cuales eran caseras y una tabla de embutidos Candelario. Todo estaba buenísimo! Sin duda, el embutido que más me gustó fue la cecina de toro, que delicia. Para acompañar la experiencia nos dió a degustar un cacho de chorizo de león que estaba también muy bueno y para acabar un chupito. La atención muy agradable, tanto Fran como Luis muy atentos y respetuosos, y la comida lo acompaña. Una buena experiencia para comer embutidos de calidad.",
+            helpful: 8
+        },
+        {
+            id: 2,
             author: "Melisa Ruiz Díaz",
             avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWUQYGM3xfDBh_CyA4A80iI7YFuu5AaLwgtUmDRVxH0KCRBJ44h=w108-h108-p-rp-mo-ba4-br100",
             rating: 5,
@@ -40,7 +49,7 @@ const reviewsData = {
             helpful: 12
         },
         {
-            id: 2,
+            id: 3,
             author: "Jordi Fibla Gonzalez",
             avatar: "https://lh3.googleusercontent.com/a/ACg8ocIP9h8DhF82aMrU5QLL458pFJ6zpn5JzT1qX9mjHdwOI9-4Eg=w108-h108-p-rp-mo-br100",
             rating: 5,
@@ -49,7 +58,7 @@ const reviewsData = {
             helpful: 8
         },
         {
-            id: 3,
+            id: 4,
             author: "Victoria Tirado Lopez",
             avatar: "https://lh3.googleusercontent.com/a/ACg8ocJ4_upv4urwFiS14W0scKv-NP-vgJPtgGX7BCRTVk4QFjmJxg=w54-h54-p-rp-mo-br100",
             rating: 5,
@@ -58,7 +67,7 @@ const reviewsData = {
             helpful: 5
         },
         {
-            id: 4,
+            id: 5,
             author: "Maria del Mar del Moral",
             avatar: "https://lh3.googleusercontent.com/a-/ALV-UjX_ja8-FfBeoWjtVL0ylIIZGGQ27i89eCXGGw_twJI86Wx2BO6F=w108-h108-p-rp-mo-ba2-br100",
             rating: 5,
@@ -67,7 +76,7 @@ const reviewsData = {
             helpful: 10
         },
         {
-            id: 5,
+            id: 6,
             author: "David",
             avatar: "https://lh3.googleusercontent.com/a/ACg8ocJkSJ8bsOt71cYSEN4FiNfzMdyP0Tbzk5WeSXCKRtbgau9cmg=w54-h54-p-rp-mo-br100",
             rating: 5,
@@ -76,7 +85,7 @@ const reviewsData = {
             helpful: 7
         },
         {
-            id: 6,
+            id: 7,
             author: "Pepet",
             avatar: "https://lh3.googleusercontent.com/a/ACg8ocK6TaW_60R0U-hgmn7gQnDFHjci-c0ieutMORZUEXrSIdxNEg=w54-h54-p-rp-mo-br100",
             rating: 5,
@@ -85,7 +94,7 @@ const reviewsData = {
             helpful: 7
         },
         {
-            id: 7,
+            id: 8,
             author: "S. C. I.",
             avatar: "https://lh3.googleusercontent.com/a-/ALV-UjVpnlFk71Gw3AXheFobN_WNMC_uwzyztzKT_vtAj7-PgYLYjvo=w54-h54-p-rp-mo-ba3-br100",
             rating: 5,
@@ -94,7 +103,7 @@ const reviewsData = {
             helpful: 7
         },
         {
-            id: 8,
+            id: 9,
             author: "Benet Salas",
             avatar: "https://lh3.googleusercontent.com/a/ACg8ocIIDO-6PKglZOzLPiGW6Z82Rgw8vKP5cpmTInIuJDA1N4Z_IQ=w54-h54-p-rp-mo-br100",
             rating: 5,
@@ -103,7 +112,7 @@ const reviewsData = {
             helpful: 7
         },
         {
-            id: 9,
+            id: 10,
             author: "Osccar Nasa",
             avatar: "https://lh3.googleusercontent.com/a-/ALV-UjXxo4I_v5_V0irqBfFlEaxTjkRCJoonYYM256AzazFNrnC-2OaR=w54-h54-p-rp-mo-br100",
             rating: 5,
@@ -157,7 +166,7 @@ function ReviewCard({ review, index, isVisible }) {
                         <h4 className="font-semibold text-gray-900 text-sm">
                             {review.author}
                         </h4>
-                        <p className="text-xs text-gray-500">{review.date}</p>
+                        {/* <p className="text-xs text-gray-500">{review.date}</p> */}
                     </div>
                 </div>
 

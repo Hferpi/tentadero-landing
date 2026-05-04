@@ -40,13 +40,18 @@ export default function SeccionVinos() {
           <div
             key={index}
             className={`group relative transform transition-all duration-700
-              ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
-            style={{ transitionDelay: `${index * 150}ms` }}
+              ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+            style={{ 
+              transitionDelay: `${(index % 4) * 100}ms`,
+              willChange: 'transform, opacity'
+            }}
           >
             <div className="relative overflow-hidden">
                 <img 
                   src={vino.imagen} 
                   alt={`${vino.nombreVino} - Vino en Peñíscola El Tentadero`}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full rounded-3xl h-full object-cover transition-transform duration-500 border-2 border-white"
                 />
                 

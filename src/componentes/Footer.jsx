@@ -8,19 +8,27 @@ export default function Footer() {
               EL TENTADERO
             </h3>
             <p className="text-gray-300">
-              Especialistas en <strong>jamón ibérico</strong> y <strong>vino en Peñíscola</strong>. Tu restaurante de confianza cerca del Castillo de Papa Luna.
+              Especialistas en <strong>jamón ibérico</strong> y{" "}
+              <strong>vino en Peñíscola</strong>. Tu restaurante de confianza
+              cerca del Castillo de Papa Luna.
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-red-400">Contacto</h4>
-            <p className="text-gray-300 mb-2">Av. del Dr. Don Marcelino Roca, 12598 Peniscola, Castellón</p>
+            <h4 className="text-lg font-semibold mb-4 text-red-400">
+              Contacto
+            </h4>
+            <p className="text-gray-300 mb-2">
+              Av. del Dr. Don Marcelino Roca, 12598 Peniscola, Castellón
+            </p>
             <p className="text-gray-300">📞 964 138 843</p>
             <p className="text-gray-300">📞 +34 622 346 594</p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-red-400">Síguenos</h4>
+            <h4 className="text-lg font-semibold mb-4 text-red-400">
+              Síguenos
+            </h4>
             <div className="flex justify-center md:justify-start space-x-4">
               <div className="flex justify-center md:justify-start space-x-4">
                 <a
@@ -41,16 +49,29 @@ export default function Footer() {
                   </svg>
                 </a>
               </div>
-
             </div>
             <h4 className="text-lg font-semibold text-red-400 mt-5">Horario</h4>
-            <p className="text-gray-300">Lunes a Domigo: 12:00h - 16:00h y 19:00h - 01:00h</p>
-
+            <p className="text-gray-300">
+              Lunes a Domigo: 12:00h - 16:00h y 19:00h - 01:00h
+            </p>
           </div>
         </div>
-
+        <div className="flex w-full justify-center items-center mt-5">
+          <span
+            className="text-xs
+           font-semibold text-cyan-600 text-center mb-1.5"
+          >
+            Un proyecto realizado por{" "}
+          </span>
+          <a href="https://hferpi.com/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:cursor-pointer hover:rotate-8 transition-transform duration-300">
+            <img src="hferpi-icon.webp" alt="hferpi" className="ml-1.5 "/>
+          </a>
+        </div>
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>© 2025 El Tentadero. Todos los derechos reservados.</p>
+          <p>
+            © {new Date().getFullYear()} El Tentadero. Todos los derechos
+            reservados.
+          </p>
         </div>
       </div>
     </footer>
